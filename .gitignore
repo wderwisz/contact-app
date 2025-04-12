@@ -1,0 +1,54 @@
+# ====== Global ======
+*.env
+*.log
+*.swp
+.DS_Store
+Thumbs.db
+
+# ====== Visual Studio / .NET ======
+# Ignore build results
+**/bin/
+**/obj/
+
+# User-specific files
+**/*.user
+**/*.suo
+**/*.userosscache
+**/*.sln.docstates
+
+# Rider
+.idea/
+
+# Build results
+**/*.dll
+**/*.exe
+**/*.pdb
+
+# Others
+*.vs/
+.vscode/
+
+# ====== Node / React  ======
+# Dependency directory
+ContactAppFront/contact-manager/node_modules/
+
+# Production build
+ContactAppFront/contact-manager/build/
+
+# Logs
+ContactAppFront/contact-manager/npm-debug.log*
+ContactAppFront/contact-manager/yarn-debug.log*
+ContactAppFront/contact-manager/yarn-error.log*
+
+# Testing
+ContactAppFront/contact-manager/coverage/
+
+# System files
+ContactAppFront/contact-manager/.DS_Store
+
+# IDE/editor
+ContactAppFront/contact-manager/.vscode/
+ContactAppFront/contact-manager/.env.local
+ContactAppFront/contact-manager/.env.development.local
+ContactAppFront/contact-manager/.env.test.local
+ContactAppFront/contact-manager/.env.production.local
