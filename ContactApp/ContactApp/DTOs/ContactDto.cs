@@ -16,7 +16,6 @@ namespace ContactApp.DTOs
                 Phone = c.Phone,
                 DateOfBirth = c.DateOfBirth.ToString("yyyy-MM-dd"),
                 Category = c.Category.ToString(),
-                //SubCategory = c.SubCategory==SubCategoryName.NULL ? "" : c.SubCategory.ToString(),
                 SubCategory = c.Category == CategoryName.SŁUŻBOWY
                         ? c.SubCategory?.ToString()
                         : c.Category == CategoryName.INNY

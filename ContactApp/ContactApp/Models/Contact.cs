@@ -26,10 +26,9 @@
         public string Email { get; set; }
         public string Phone { get; set; }
         public DateOnly DateOfBirth { get; set; }
-        //public ContactCategory Category { get; set; }
         public CategoryName Category { get; set; }
         public SubCategoryName? SubCategory { get; set; }
         public string? CustomSubCategory { get; set; }
-        //public string SubCategory { get; set; }
+
     }
 }

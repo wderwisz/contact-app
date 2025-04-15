@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./ContactApp/ContactApp
+    ports:
+      - "5000:5000"
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+      
+  frontend:
+    build:
+      context: ./ContactAppFront/contact-manager
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend

@@ -7,7 +7,6 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
 // Add in-memory database context
@@ -20,8 +19,8 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        //policy.WithOrigins("http://localhost:3000")
-        policy.AllowAnyOrigin()
+        policy.WithOrigins("http://localhost:3000")
+        //policy.AllowAnyOrigin()
               .AllowAnyHeader()
               .AllowAnyMethod();
     });
@@ -35,8 +34,6 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-//app.UseHttpsRedirection();
-
 app.UseCors();
 
 app.UseAuthorization();
@@ -49,5 +46,10 @@ app.Use(async (context, next) =>
     await next();
 });
 
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+    Seeder.SeedContacts(dbContext);
+}
 
 app.Run();
