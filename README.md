@@ -23,9 +23,9 @@ Po pobraniu zawartości repozytorium, należy otworzyć katalog z plikiem `docke
 docker-compose up --build
 ```
 
-Dostępne lokalizacje:
+Po uruchomieniu się serwisów, aplikacja będzie dostępna pod dwoma adresami:
 
-- Frontend: `http://localhost:3000`
+- Frontend: `http://localhost:3000/contacts`
 - Backend API: `http://localhost:5000/api/contact`
 
 
