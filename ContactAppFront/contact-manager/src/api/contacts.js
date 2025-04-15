@@ -1,3 +1,5 @@
+// This file contains all functions used to send requests to backend service  
+
 const API_URL = "http://localhost:5000/api/contact/";
 
 export async function getContacts() {

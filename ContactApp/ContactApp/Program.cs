@@ -49,6 +49,8 @@ app.Use(async (context, next) =>
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+   
+    // Initialize db with predefined data
     Seeder.SeedContacts(dbContext);
 }
 

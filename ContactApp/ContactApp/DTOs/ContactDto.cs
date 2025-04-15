@@ -3,6 +3,9 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ContactApp.DTOs
 {
+    /// <summary>
+    /// Static class used to perform operations on DTO
+    /// </summary>
     public class DtoTools
     {
         public static ContactDto ContactToDto(Contact c)
@@ -26,18 +29,6 @@ namespace ContactApp.DTOs
 
         public static Contact DtoToContact(ContactDto dto)
         {
-            //return new Contact
-            //{
-            //    Id = dto.Id,
-            //    FirstName = dto.FirstName,
-            //    LastName = dto.LastName,
-            //    Email = dto.Email,
-            //    Phone = dto.Phone,
-            //    DateOfBirth = DateOnly.ParseExact(dto.DateOfBirth, "yyyy-MM-dd"),
-            //    Category = Enum.Parse<CategoryName>(dto.Category),
-            //    SubCategory = dto.SubCategory == "" ? SubCategoryName.NULL : Enum.Parse<SubCategoryName>(dto.SubCategory),
-            //};
-
             Contact newContact = new Contact()
             {
                 Id = dto.Id,
@@ -82,6 +73,9 @@ namespace ContactApp.DTOs
             }
         }
     }
+    /// <summary>
+    /// Data Transfer Object class of Contact
+    /// </summary>
     public class ContactDto
     {
         public int Id { get; set; }

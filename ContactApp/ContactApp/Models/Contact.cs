@@ -1,5 +1,7 @@
 ﻿namespace ContactApp.Models
 {
+    // Enums that hold information about available categories and subcategories
+    // For testing purpose
     public enum CategoryName
     {
         SŁUŻBOWY,
@@ -10,14 +12,11 @@
     {
         SZEF,
         KLIENT,
-        WSPÓŁPRACOWNIK,
-        NULL
+        WSPÓŁPRACOWNIK
     }
-    public class ContactCategory
-    {
-        public int Id { get; set; }
-        public CategoryName Name { get; set; }
-    }
+    /// <summary>
+    /// Contact class 
+    /// </summary>
     public class Contact
     {
         public int Id { get; set; }

@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ContactApp.Services
 {
+    /// <summary>
+    /// Service class implementing IContactService interface
+    /// </summary>
     public class ContactService : IContactService
     {
         private readonly AppDbContext _context;

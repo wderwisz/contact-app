@@ -1,6 +1,6 @@
 # 📇 Contact Manager App
 
-Aplikacja webowa do zarządzania kontaktami. Umożliwia dodawanie, edytowanie i usuwanie kontaktów z podziałem na kategorie oraz podkategorie.
+Aplikacja webowa do zarządzania kontaktami. Umożliwia dodawanie, edytowanie i usuwanie kontaktów z podziałem na kategorie oraz podkategorie. Projekt wykonany w ramach nauki tworzenia aplikacji webowych z użyciem technologii .NET i React.
 
 ## 🧱 Technologia
 
@@ -17,7 +17,7 @@ Aplikacja webowa do zarządzania kontaktami. Umożliwia dodawanie, edytowanie i 
 
 ## 🐳 Jak uruchomić aplikację
 
-Po pobraniu zawartości repozytorium należy otworzyć katalog z plikiem `docker-compose.yml` i wykonać polecenie:
+Po pobraniu zawartości repozytorium, należy otworzyć katalog z plikiem `docker-compose.yml` i wykonać polecenie:
 
 ```bash
 docker-compose up --build
@@ -32,7 +32,4 @@ Dostępne lokalizacje:
 ## 🛠️ Autor
 Wojciech Derwisz
 
-
-
-Projekt wykonany w ramach nauki tworzenia aplikacji webowych z użyciem technologii .NET i React.
 

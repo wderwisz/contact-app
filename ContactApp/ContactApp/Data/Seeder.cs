@@ -2,6 +2,9 @@
 
 namespace ContactApp.Data
 {
+    /// <summary>
+    /// Class for testing purpose - creates some contacts during initialization of in-memory db
+    /// </summary>
     public static class Seeder
     {
         public static void SeedContacts(AppDbContext context)

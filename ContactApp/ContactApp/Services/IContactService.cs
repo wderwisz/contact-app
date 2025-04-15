@@ -2,6 +2,9 @@
 
 namespace ContactApp.Services
 {
+    /// <summary>
+    /// Interface of service that manages operations on data
+    /// </summary>
     public interface IContactService
     {
         Task<IEnumerable<ContactDto>> GetAll();

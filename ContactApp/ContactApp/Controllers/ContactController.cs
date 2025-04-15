@@ -8,6 +8,9 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace ContactApp.Controllers
 {
+    /// <summary>
+    /// Controller class which manages basic API requests 
+    /// </summary>
     [Route("api/[controller]")]
     [ApiController]
     public class ContactController : ControllerBase
